@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
-
-
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -19,11 +16,9 @@ class App extends React.Component {
         this.onNewHobby = this.onNewHobby.bind(this);
         //this.addNewHobby = this.addNewHobby.bind(this);
     }
-
     onNewHobby(e) {
         this.newHobby = e.target.value;
     }
-
     addNewHobby = () => {
         if (this.state.hobbies.includes(this.newHobby)) {
             this.setState({
@@ -82,7 +77,6 @@ class App extends React.Component {
             </div>
         )
     }
-
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
