@@ -11,11 +11,13 @@ class App extends React.Component {
             error: ''
         };
 
+		
         this.newHobby = '';
 
         this.onNewHobby = this.onNewHobby.bind(this);
         //this.addNewHobby = this.addNewHobby.bind(this);
     }
+	
     onNewHobby(e) {
         this.newHobby = e.target.value;
     }
@@ -32,6 +34,7 @@ class App extends React.Component {
 
             });
     }
+	
     render() {
         return (
             <div className="container-fluid	 mt-4 row">
